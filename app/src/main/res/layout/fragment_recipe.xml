@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SCREEN"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/fragment_recipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipeFragment"
+    tools:visibility="visible"
+    tools:ignore="ScrollViewCount">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/blockTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:background="#8BBF6A">
+
+                        <ImageView
+                            android:id="@+id/backButton"
+                            android:layout_width="52dp"
+                            android:layout_height="58dp"
+                            android:background="#8BBF6A"
+                            android:src="@drawable/baseline_arrow_back_ios_new_24" />
+
+                        <TextView
+                            android:id="@+id/textViewRecep"
+                            style="@style/TEXT_BOLD"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/backButton"
+                            android:layout_marginTop="-1dp"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="30sp" />
+
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="250dp"
+                            android:layout_below="@id/textViewRecep"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/image_border" />
+
+                        <ImageView
+                            android:id="@+id/imageviewRecep"
+                            android:layout_width="300dp"
+                            android:layout_height="250dp"
+                            android:layout_below="@id/textViewRecep"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/image_border" />
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/TEXT_BOLD"
+                    android:id="@+id/ingredient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:text="@string/Ingredient"
+                    android:gravity="center"/>
+
+                <LinearLayout
+                    android:id="@+id/checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    style="@style/TEXT_REGULAR"
+                    android:paddingTop="10dp">
+
+                </LinearLayout>
+
+
+                <TextView
+                    style="@style/TEXT_BOLD"
+                    android:id="@+id/nameProcess"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="25dp"
+                    android:text="@string/nameProcess"
+                    android:gravity="center" />
+
+                <TextView
+                    style="@style/TEXT_REGULAR"
+                    android:letterSpacing="0.04"
+                    android:lineSpacingExtra="4dp"
+                    android:id="@+id/textViewRecipe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp" />
+
+        </LinearLayout>
+
+</ScrollView>

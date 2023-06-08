@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/SCREEN"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountFragment">
+
+    <RelativeLayout
+        android:id="@+id/blockOne"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#8BBF6A">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_round_account_circle_24"
+            app:tint="#FFFFFF" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/blockOne"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/account"
+        android:textAlignment="center"
+        style="@style/TEXT_BOLD"/>
+
+    <TextView
+        style="@style/TEXT_REGULAR"
+        android:id="@+id/users_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="" />
+
+
+    <ImageView
+        android:id="@+id/maskotAccount"
+        android:layout_width="361dp"
+        android:layout_height="330dp"
+        android:layout_below="@id/user"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginTop="226dp"
+        android:layout_marginEnd="-42dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/account_fragment" />
+
+    <Button
+        android:id="@+id/exitAccount"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/users_details"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="329dp"
+        android:background="@drawable/shadow_button_layer_list"
+        android:text="@string/exit_from_acc"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+</RelativeLayout>

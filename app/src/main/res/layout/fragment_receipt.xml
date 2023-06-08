@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SCREEN"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ReceiptFragment"
+    android:id="@+id/fragment_recipeG">
+
+    <android.widget.SearchView
+        android:id="@+id/Search"
+        android:layout_width="410dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="2dp"
+        android:queryHint="Поиск рецепта" />
+
+    <GridView
+        android:layout_below="@+id/Search"
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        style="@style/TEXT_REGULAR"
+        android:numColumns="2"
+        android:verticalSpacing="4dp"
+        tools:ignore="RtlSymmetry" />
+
+</RelativeLayout>

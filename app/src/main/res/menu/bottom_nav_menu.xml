@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Главная"
+        android:icon="@drawable/ic_round_home_24"
+        android:id="@+id/home"/>
+    <item android:title="Рецепты"
+        android:icon="@drawable/ic_round_restaurant_24"
+        android:id="@+id/receipt"/>
+    <item android:title="Аккаунт"
+        android:icon="@drawable/ic_round_account_circle_24"
+        android:id="@+id/account"
+        />
+</menu>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">HealthySteps</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="login">Вход</string>
+    <string name="email">Email</string>
+    <string name="password">Пароль</string>
+    <string name="register">Регистрация</string>
+    <string name="click_to_login">Выполнить вход</string>
+    <string name="click_to_registrate">Выполнить регистрацию</string>
+    <string name="exit_from_acc">Выход</string>
+
+    <string name="show_today_step">Шаги:</string>
+    <string name="today_step">""</string>
+    <string name="nameProcess">Процесс приготовления</string>
+    <string name="Ingredient">Ингредиенты</string>
+    <string name="Sun">Вс.</string>
+    <string name="Sat">Сб.</string>
+    <string name="Fri">Пт.</string>
+    <string name="Thu">Чт.</string>
+    <string name="Wed">Ср.</string>
+    <string name="Tue">Вт.</string>
+    <string name="Mon">Пн.</string>
+    <string name="pedometer">Счетчик шагов Старт/Стоп</string>
+    <string name="account">Учётная запись</string>
+</resources>

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/blockOne"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:alpha="0.7"
+        android:background="#8BBF6A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ProgressBar
+
+            android:id="@+id/today_step"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="208dp"
+            android:layout_height="193dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="4dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/big_circle"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:indeterminate="false"
+            android:max="100"
+            android:paddingTop="10dp"
+            android:progress="80"
+            android:progressDrawable="@drawable/big_circle_progress_bar" />
+
+
+        <TextView
+            android:id="@+id/showTodaySteps"
+            style="@style/TEXT_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:gravity="center_vertical"
+            android:text="@string/show_today_step"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/showSteps"
+            style="@style/TEXT_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/showTodaySteps"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:shadowRadius="1.5"
+            android:text="@string/today_step"
+            android:textSize="25sp" />
+
+        <Switch
+            android:id="@+id/switch1"
+            style="@style/TEXT_REGULAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/today_step"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="10dp"
+            android:alpha="0.70"
+            android:checked="true"
+            android:paddingBottom="10dp"
+            android:switchPadding="10dp"
+
+            android:text="@string/pedometer"
+            android:theme="@style/MySwitch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/total_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/second_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blockOne">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:alpha="0.7"
+            android:background="@drawable/background_rounded_corners"
+
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progressBar_1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/circle_shape"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="80"
+                android:progressDrawable="@drawable/circular_progress_bar" />
+
+            <TextView
+                android:id="@+id/TX_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:gravity="center"
+                style="@style/TEXT_REGULAR"
+                android:text="@string/Mon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:alpha="0.7"
+            android:background="@drawable/background_rounded_corners"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progressBar_2"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/circle_shape"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="80"
+                android:progressDrawable="@drawable/circular_progress_bar" />
+
+            <TextView
+                android:id="@+id/TX_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:gravity="center"
+                android:text="@string/Tue"
+                style="@style/TEXT_REGULAR" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:alpha="0.7"
+            android:background="@drawable/background_rounded_corners"
+            android:gravity="fill_vertical"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progressBar_3"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/circle_shape"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="80"
+                android:progressDrawable="@drawable/circular_progress_bar" />
+
+            <TextView
+                android:id="@+id/TX_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:gravity="center"
+                android:text="@string/Wed"
+                style="@style/TEXT_REGULAR" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:alpha="0.7"
+            android:background="@drawable/background_rounded_corners"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progressBar_4"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="4dp"
+
+                android:background="@drawable/circle_shape"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="80"
+                android:progressDrawable="@drawable/circular_progress_bar" />
+
+            <TextView
+                android:id="@+id/TX_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="13dp"
+                android:gravity="center"
+                android:text="@string/Thu"
+                style="@style/TEXT_REGULAR" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/total_layout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:alpha="0.7"
+            android:background="@drawable/background_rounded_corners"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progressBar_5"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/circle_shape"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="80"
+                android:progressDrawable="@drawable/circular_progress_bar" />
+
+            <TextView
+                android:id="@+id/TX_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:gravity="center"
+                android:text="@string/Fri"
+                style="@style/TEXT_REGULAR" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:alpha="0.7"
+            android:background="@drawable/background_rounded_corners"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progressBar_6"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="50dp"
+                android:layout_height="51dp"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/circle_shape"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="80"
+                android:progressDrawable="@drawable/circular_progress_bar" />
+
+            <TextView
+                android:id="@+id/TX_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:gravity="center"
+                android:text="@string/Sat"
+                style="@style/TEXT_REGULAR"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:alpha="0.7"
+            android:background="@drawable/background_rounded_corners"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progressBar_7"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/circle_shape"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="80"
+                android:progressDrawable="@drawable/circular_progress_bar" />
+
+            <TextView
+                android:id="@+id/TX_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:gravity="center"
+                android:text="@string/Sun"
+                style="@style/TEXT_REGULAR" />
+        </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/second_layout">
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/home_maskot" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
